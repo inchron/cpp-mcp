@@ -37,7 +37,7 @@ endif()
 set_target_properties(${TARGET} PROPERTIES
     VERSION ${PROJECT_VERSION}
     SOVERSION 1
-    PUBLIC_HEADER "../include/mcp_client.h;../include/mcp_message.h;../include/mcp_prompt.h;../include/mcp_resource.h;../include/mcp_server.h;../include/mcp_tool.h;../include/mcp_stdio_client.h;../include/mcp_sse_client.h;../include/mcp_thread_pool.h;../include/mcp_logger.h;../common/base64.hpp;../common/json.hpp"
+    PUBLIC_HEADER "../include/mcp_client.h;../include/mcp_message.h;../include/mcp_prompt.h;../include/mcp_resource.h;../include/mcp_server.h;../include/mcp_tool.h;../include/mcp_stdio_client.h;../include/mcp_sse_client.h;../include/mcp_thread_pool.h;../include/mcp_logger.h;../common/base64.hpp;../common/nlohmann-json/nlohmann/json.hpp"
 )
 
 # Install rules
