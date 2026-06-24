@@ -1211,7 +1211,7 @@ TEST(ServerLifecycle, StopClosesActiveSseSessionPromptly) {
 
     std::atomic<int> cleanups{0};
     server server(conf);
-    server.register_session_cleanup("session", [&](const std::string& key) {
+    server.register_session_cleanup("session", [&](const std::string& key, const std::string& /*session_id*/) {
         if (key == "session") {
             cleanups.fetch_add(1, std::memory_order_relaxed);
         }

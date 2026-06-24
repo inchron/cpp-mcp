@@ -1658,7 +1658,7 @@ void server::invoke_session_cleanup(
             continue;
         }
         try {
-            handler(key);
+            handler(key, session_id);
         } catch (const std::exception& e) {
             LOG_WARNING("Exception in session cleanup handler for ", session_id, ": ", e.what());
         } catch (...) {
